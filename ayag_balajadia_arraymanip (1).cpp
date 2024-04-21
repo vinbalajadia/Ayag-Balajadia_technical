@@ -47,7 +47,7 @@ void menu(){
     switch(c){
     case 1:
       displayArray();
-    break;
+      break;
     case 2:
       cout << "Current Array:" << endl; //output of current array 
       displayArray();
@@ -100,7 +100,6 @@ void insertArray(int array[], int& size, int position, int newElement){
   
   if(position < 0 || position > size) {
     cout << "Invalid position." << endl;
-    return;
   }
   for(int i = size; i > position; i--) {
     array[i] = array[i - 1]; // shift elements to the right
